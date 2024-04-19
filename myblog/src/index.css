@@ -1,0 +1,112 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #212529;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*UL*/
+ul {
+  list-style-type: none;
+}
+
+/*HOME_IMG*/
+.homeImg {
+  background-image: url(homeImg.png);
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  background-position-x: center;
+}
+
+/*HOME_FONT_STYLE*/
+.homeFontStyle {
+  animation: fStyle infinite 3s linear;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*LOGIN/SIGNIN ERROR*/
+.error-message {
+  color: rgb(233, 39, 39);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*FOOTER_TOP_BORDER*/
+.footer-border-top {
+  border-top: 2px solid rgb(139, 135, 135);
+}
+
+/*POST_CARD_IMG_STYLING*/
+.myCardImg {
+  width: 6rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+/*POST_EDIT/DELETE_BUTTON*/
+.post-img-div {
+  position: relative;
+}
+
+.post-btn-div {
+  position: absolute;
+  bottom: 15px;
+}
+
+.post-btn-div Button {
+  font-weight: 800;
+  font-size: 0.6rem;
+  position: relative;
+  border: none;
+}
+
+/*POST_CARD_FONT_SIZE*/
+.post-card-font {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+/*HOME_FONT_STYLE_KEY-FRAMES*/
+@keyframes fStyle {
+  0% {
+    transform: scale(1)
+  }
+
+  25% {
+    transform: scale(0.8)
+  }
+
+  75% {
+    transform: scale(0.8)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}
+
+/*POST_CARD_IMG_FONT_STYLING INSIDE @MEDIA*/
+@media (max-width:339px) {
+  .myCardImg {
+    width: 4rem;
+    height: 2rem;
+    overflow: hidden;
+  }
+
+  .post-card-font {
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+}
+
+/*FOOTER_CONTENT_HOVER*/
+.footer-list li :hover {
+  color: rgb(26, 26, 29);
+}
